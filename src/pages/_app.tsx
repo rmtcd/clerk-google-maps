@@ -8,7 +8,6 @@ const MyApp: AppType = ({Component, pageProps}) => {
     return (
         <ClerkProvider
             {...pageProps}
-            appearance={{layout: {logoImageUrl: "/logo/logo-full-dark.svg"}}}
         >
             <Head>
                 <title>Clerk with Google Maps</title>
