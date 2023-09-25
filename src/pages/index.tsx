@@ -1,8 +1,3 @@
-import Head from "next/head";
-import Link from "next/link";
-
-import {api} from "~/utils/api";
-
 import React, {type PropsWithChildren, useContext} from "react";
 import {GoogleApiContext} from "~/providers";
 import {GoogleMap} from "@react-google-maps/api";
