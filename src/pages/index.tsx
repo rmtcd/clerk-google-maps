@@ -6,7 +6,7 @@ import {api} from "~/utils/api";
 import React, {type PropsWithChildren, useContext} from "react";
 import {GoogleApiContext} from "~/providers";
 import {GoogleMap} from "@react-google-maps/api";
-import {SignOutButton, SignUp} from "@clerk/nextjs";
+import {SignInButton, SignOutButton, SignUp} from "@clerk/nextjs";
 
 const GoogleApiWrapper = (props: PropsWithChildren) => {
     const {children} = props;
@@ -41,6 +41,9 @@ export default function Home() {
                         />
                     </GoogleApiWrapper>
                 </div>
+                <SignInButton mode="modal">
+                    <button className="text-white">Sign in</button>
+                </SignInButton>
                 <SignUp/>
                 <SignOutButton>
                     <button className="text-white">Sign out</button>
