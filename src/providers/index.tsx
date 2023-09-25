@@ -33,11 +33,8 @@ export const GoogleApiProvider = ({children}: PropsWithChildren) => {
     };
 
     return (
-        <ClerkProvider
-        >
-            <GoogleApiContext.Provider value={value}>
-                {children}
-            </GoogleApiContext.Provider>
-        </ClerkProvider>
+        <GoogleApiContext.Provider value={value}>
+            {children}
+        </GoogleApiContext.Provider>
     );
 };
